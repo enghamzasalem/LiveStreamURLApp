@@ -1,0 +1,24 @@
+<ion-view view-title="{{title}} ">
+  <ion-content>
+    <div class="list card">
+      <button
+        ng-click="setProject()"
+        class="button button-full button-positive"
+      >
+        Open the link
+      </button>
+
+      <iframe
+        name="chatFrame"
+        id="iframe"
+        class="iframe"
+        style="width:100%;height:500px"
+        ng-src="{{currentProjectUrl}}"
+        align="top"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+  </ion-content>
+</ion-view>

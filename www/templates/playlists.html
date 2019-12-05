@@ -1,0 +1,17 @@
+<ion-view view-title="Live Stream">
+  <ion-content>
+    <div class="list">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="search" />
+      </label>
+      <a
+        class="item item-avatar"
+        ng-href="#/app/detials/{{p.$id}}"
+        ng-repeat="p in arry|filter:search"
+      >
+        <h2>{{p.linkTitle}}</h2>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>
